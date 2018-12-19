@@ -1,0 +1,55 @@
+{
+  "name": "state-of-js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "downshift": "3.1.5",
+    "normalize.css": "8.0.1",
+    "prop-types": "15.6.2",
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2",
+    "react-icons": "3.2.2",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.1",
+    "sanitize.css": "8.0.0",
+    "styled-components": "4.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "process": "node src/scripts/processData.js",
+    "lint": "eslint .",
+    "prettify": "prettier --write '**/*.js'",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}
