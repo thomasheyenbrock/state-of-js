@@ -53,6 +53,10 @@ const joinTextFragments = (textFragments, joinWith = "and") => {
   return `${restElements.reverse().join(", ")} ${joinWith} ${lastElement}`;
 };
 
+const Emphasise = styled.span`
+  color: ${props => props.theme.colors.red};
+`;
+
 const Overlay = props => {
   const { category, name, overlay, setOverlay, story } = props;
   const positiveFlavors = joinTextFragments(story.flavorUsers);
@@ -61,17 +65,75 @@ const Overlay = props => {
     <Background visible={overlay} onClick={() => setOverlay(false)}>
       <Dialog visible={overlay} onClick={e => e.stopPropagation()} />
       <Text onClick={e => e.stopPropagation()}>
-        <h3>A story about the typical {name}-user...</h3>
+        <h2>A story about the typical {name}-user...</h2>
         {category.name !== "java_script_flavors" && (
           <p>
-            {positiveFlavors
-              ? `When it comes to JavaScript flavors, ${name}-users like to use ${positiveFlavors}. `
-              : `${name}-users don't like any particular flavors of the JavaScript language. `}
-            {negativeFlavors
-              ? `They doesn't appreciate ${negativeFlavors} though.`
-              : "There are no flavors that they dislike."}
+            {positiveFlavors ? (
+              <>
+                When it comes to JavaScript flavors, {name}-users like to use{" "}
+                <Emphasise>{positiveFlavors}</Emphasise>.{" "}
+              </>
+            ) : (
+              `${name}-users don't like any particular flavors of the JavaScript language. `
+            )}
+            {negativeFlavors ? (
+              <>
+                They don't appreciate <Emphasise>{negativeFlavors}</Emphasise>{" "}
+                though.
+              </>
+            ) : (
+              "There are no flavors that they dislike."
+            )}
           </p>
         )}
+        {category.name !== "front_end" && (
+          <p>
+            For building frontend applications, {name}-users prefer{" "}
+            <Emphasise>{story.front_end}</Emphasise>.
+          </p>
+        )}
+        <p>
+          Fo compiling and building his frontend code the {name}-user leverages{" "}
+          <Emphasise>{story.buildTool}</Emphasise>.
+        </p>
+        {category.name !== "data_layer" && (
+          <p>
+            {name}-users mostly rely on{" "}
+            <Emphasise>{story.data_layer}</Emphasise> for managing their data
+            layer.
+          </p>
+        )}
+        {category.name !== "back_end" && (
+          <p>
+            The most common backend framework that {name}-users like to use is{" "}
+            <Emphasise>{story.back_end}</Emphasise>.
+          </p>
+        )}
+        {category.name !== "testing" && (
+          <p>
+            When it comes to testing their code, {name}-users like{" "}
+            <Emphasise>{story.testing}</Emphasise> the most.
+          </p>
+        )}
+        {category.name !== "mobile_desktop" && (
+          <p>
+            If the {name}-user wants to build something for mobile devices or
+            some desktop application he sticks with{" "}
+            <Emphasise>{story.mobile_desktop}</Emphasise>.
+          </p>
+        )}
+        {story.utilityLibraries.length === 0 ? (
+          <>Users of {name} normally don't need further utility libraries.</>
+        ) : (
+          <>
+            Users of {name} also like to use some utility libraries like{" "}
+            <Emphasise>{joinTextFragments(story.utilityLibraries)}</Emphasise>.
+          </>
+        )}
+        <p>
+          <Emphasise>{story.textEditor}</Emphasise> is the favourite text editor
+          in which {name}-users like to code.
+        </p>
       </Text>
       <CloseIcon />
     </Background>

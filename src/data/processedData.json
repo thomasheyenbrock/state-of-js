@@ -265,11 +265,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Native Apps"
+        "mobile_desktop": "Native Apps",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -538,11 +544,16 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Lodash"
+        ],
         "front_end": "Preact",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -811,11 +822,17 @@
           "Elm"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -1084,11 +1101,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Koa",
         "testing": "Jest",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -1356,11 +1379,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Feathers",
         "testing": "Mocha",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -1628,11 +1657,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Vue.js",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -1901,11 +1936,16 @@
           "ClojureScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -2172,11 +2212,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -2444,11 +2490,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Enzyme",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -2718,11 +2770,17 @@
           "Reason"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -2990,11 +3048,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Relay",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -3263,11 +3327,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -3535,11 +3605,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -3808,11 +3884,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "MobX",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -4081,11 +4163,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jasmine",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -4353,11 +4441,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -4626,11 +4720,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -4898,11 +4998,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Next.js",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -5170,11 +5276,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -5443,11 +5555,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Apollo",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -5715,11 +5833,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "GraphQL",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -5987,11 +6111,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Storybook",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -6260,11 +6390,17 @@
           "Flow"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -6533,11 +6669,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -6806,11 +6948,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Polymer",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -7079,11 +7227,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Sails",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -7351,11 +7505,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Ember",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -7624,11 +7784,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jasmine",
-        "mobile_desktop": "Ionic"
+        "mobile_desktop": "Ionic",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -7896,11 +8062,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Meteor",
         "testing": "Mocha",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -8169,11 +8341,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Ava",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -8442,11 +8620,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "NativeScript"
+        "mobile_desktop": "NativeScript",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -8715,11 +8899,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Karma",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -8987,11 +9177,17 @@
           "ES6"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "React Native"
+        "mobile_desktop": "React Native",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -9260,11 +9456,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jasmine",
-        "mobile_desktop": "Ionic"
+        "mobile_desktop": "Ionic",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -9533,11 +9735,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Mocha",
-        "mobile_desktop": "Cordova"
+        "mobile_desktop": "Cordova",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     },
     {
@@ -9806,11 +10014,17 @@
           "TypeScript"
         ],
         "flavorAvoiders": [],
+        "utilityLibraries": [
+          "Moment",
+          "Lodash"
+        ],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
         "testing": "Jest",
-        "mobile_desktop": "Electron"
+        "mobile_desktop": "Electron",
+        "buildTool": "Webpack",
+        "textEditor": "VS Code"
       }
     }
   ],

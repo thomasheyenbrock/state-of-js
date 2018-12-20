@@ -671,7 +671,8 @@ elements.forEach(element => {
 
   element.story = {
     flavorUsers: [],
-    flavorAvoiders: []
+    flavorAvoiders: [],
+    utilityLibraries: []
   };
 
   elements
@@ -773,6 +774,70 @@ elements.forEach(element => {
       },
       { score: 0, mobileDesktop: null }
     ).mobileDesktop;
+
+  element.story.mobile_desktop = elements
+    .filter(e => e.category === categories.mobile_desktop)
+    .reduce(
+      (acc, mobileDesktop) => {
+        const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${
+          mobileDesktop.id
+        }`;
+        const score = relevantProDatapoints.filter(
+          d => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
+        ).length;
+        if (!acc.mobileDesktop || acc.score < score)
+          return { mobileDesktop: mobileDesktop.name, score };
+        return acc;
+      },
+      { score: 0, mobileDesktop: null }
+    ).mobileDesktop;
+
+  element.story.buildTool = [
+    "Meteor",
+    "Webpack",
+    "Rollup",
+    "Gulp",
+    "Grunt",
+    "Parcel",
+    "Browserify"
+  ].reduce(
+    (acc, buildTool) => {
+      const score = relevantProDatapoints
+        .filter(d => d.other_tools_build_tools)
+        .filter(d => d.other_tools_build_tools.includes(buildTool)).length;
+      if (!acc.buildTool || acc.score < score) return { buildTool, score };
+      return acc;
+    },
+    { score: 0, buildTool: null }
+  ).buildTool;
+
+  ["jQuery", "Moment", "Underscore", "Lodash", "Date-fns", "Ramda"].forEach(
+    utilityLibrary => {
+      const users = relevantProDatapoints
+        .filter(d => d.other_tools_utility_libraries)
+        .filter(d => d.other_tools_utility_libraries.includes(utilityLibrary));
+      if (users.length / relevantProDatapoints.length >= 0.5)
+        element.story.utilityLibraries.push(utilityLibrary);
+    }
+  );
+
+  element.story.textEditor = [
+    "VS Code",
+    "Webstorm",
+    "Vim",
+    "Sublime Text",
+    "Atom",
+    "Emacs"
+  ].reduce(
+    (acc, textEditor) => {
+      const score = relevantProDatapoints
+        .filter(d => d.other_tools_text_editors)
+        .filter(d => d.other_tools_text_editors.includes(textEditor)).length;
+      if (!acc.textEditor || acc.score < score) return { textEditor, score };
+      return acc;
+    },
+    { score: 0, textEditor: null }
+  ).textEditor;
 });
 
 questions.forEach(question => {
