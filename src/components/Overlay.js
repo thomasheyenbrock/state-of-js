@@ -58,7 +58,7 @@ const Emphasise = styled.span`
 `;
 
 const Overlay = props => {
-  const { category, name, overlay, setOverlay, story } = props;
+  const { category, name, overlay, setOverlay, stars, story } = props;
   const positiveFlavors = joinTextFragments(story.flavorUsers);
   const negativeFlavors = joinTextFragments(story.flavorAvoiders, "or");
   return (
@@ -66,6 +66,13 @@ const Overlay = props => {
       <Dialog visible={overlay} onClick={e => e.stopPropagation()} />
       <Text onClick={e => e.stopPropagation()}>
         <h2>A story about the typical {name}-user...</h2>
+        {typeof stars === "number" ? (
+          <p>
+            The user is probably one of the {stars} stargazers of the GitHub
+            repository of {name}! (This rounds down to{" "}
+            {Math.floor(stars / 1000)} thousand stars. 😉)
+          </p>
+        ) : null}
         {category.name !== "java_script_flavors" && (
           <p>
             {positiveFlavors ? (
@@ -148,6 +155,7 @@ Overlay.propTypes = {
   name: PropTypes.string.isRequired,
   overlay: PropTypes.bool.isRequired,
   setOverlay: PropTypes.func.isRequired,
+  stars: PropTypes.number.isRequired,
   story: PropTypes.shape({
     flavors: PropTypes.arrayOf(PropTypes.string)
   }).isRequired

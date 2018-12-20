@@ -206,7 +206,10 @@ const Name = styled.div`
 `;
 
 const Element = props => {
-  let number = Math.floor(props.stars / 1000) || 0;
+  let number;
+  if (typeof props.stars === "number") {
+    number = Math.floor(props.stars / 1000) || 0;
+  }
   if (props.view !== "initial") {
     number = props.values[props.view][props.numbers];
     if (props.numbers === "percents") {
