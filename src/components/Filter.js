@@ -109,7 +109,7 @@ const Filter = ({
           selectedItem={views.find(v => v.key === view)}
         >
           {({ getItemProps, getToggleButtonProps, isOpen, selectedItem }) => (
-            <div style={{ width: "100%" }}>
+            <div style={{ width: "100%", zIndex: 1 }}>
               {isOpen &&
                 views.map(
                   (v, index) =>
@@ -167,7 +167,7 @@ const Filter = ({
           selectedItem={metrics.find(m => m.key === metric)}
         >
           {({ getItemProps, getToggleButtonProps, isOpen, selectedItem }) => (
-            <div style={{ width: "100%" }}>
+            <div style={{ width: "100%", zIndex: 1 }}>
               {isOpen &&
                 metrics.map(
                   (m, index) =>
