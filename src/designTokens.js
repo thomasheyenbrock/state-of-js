@@ -9,7 +9,7 @@ const colorNames = {
   red: "red",
   turquoise: "turquoise",
   white: "white",
-  yellow: "yellow"
+  yellow: "yellow",
 };
 
 const colors = {
@@ -23,18 +23,18 @@ const colors = {
   red: "#FE6A6A",
   turquoise: "#72D7D1",
   white: "#E1E1E1",
-  yellow: "#F8DF20"
+  yellow: "#F8DF20",
 };
 
 const layout = {
   mobile: 750,
-  tablet: 1000
+  tablet: 1000,
 };
 
 const theme = {
   colors,
   colorNames,
-  layout
+  layout,
 };
 
 export default theme;

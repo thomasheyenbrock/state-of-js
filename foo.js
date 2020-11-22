@@ -139,7 +139,7 @@ export default [
   "about_you_your_country",
   "about_you_your_city",
   "about_you_yearly_salary",
-  "about_you_other_comments"
+  "about_you_other_comments",
 ];
 
 export const foo = {
@@ -149,7 +149,7 @@ export const foo = {
     "2-5 years",
     "5-10 years",
     "10-20 years",
-    "20+ years"
+    "20+ years",
   ],
   about_you_company_size: [
     "1-5 people",
@@ -159,13 +159,13 @@ export const foo = {
     "10-20 people",
     "5-10 people",
     "1000+ people",
-    "100-1000 people"
+    "100-1000 people",
   ],
   about_you_your_gender: [
     "Prefer not to say",
     "Male",
     "Non-binary/ third gender",
-    "Female"
+    "Female",
   ],
   about_you_yearly_salary: [
     "I work for free :(",
@@ -174,6 +174,6 @@ export const foo = {
     "$30k-$50k",
     "$50k-$100k",
     "$100k-$200k",
-    "$200k+"
-  ]
+    "$200k+",
+  ],
 };

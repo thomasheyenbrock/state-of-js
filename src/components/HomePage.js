@@ -6,7 +6,7 @@ import Filter from "./Filter";
 import processedData from "../data/processedData.json";
 
 const elementsWithAdditionalInformation = Promise.all(
-  processedData.elements.map(async element => {
+  processedData.elements.map(async (element) => {
     if (!element.repo) {
       return element;
     }
@@ -42,7 +42,7 @@ const HomePage = () => {
     view,
     setView,
     sortBy,
-    setSortBy
+    setSortBy,
   };
 
   React.useEffect(() => {
@@ -55,7 +55,7 @@ const HomePage = () => {
       {elements.length === 0 ? (
         <Spinner />
       ) : (
-        elements.map(element => (
+        elements.map((element) => (
           <Element key={element.name} {...element} {...hooks} />
         ))
       )}
