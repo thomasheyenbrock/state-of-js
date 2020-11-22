@@ -9,36 +9,36 @@ const numberOfDatapoints = rawData.length;
 const categories = {
   back_end: {
     name: "back_end",
-    color: "pink"
+    color: "pink",
   },
   build_tools: {
     name: "build_tools",
-    color: "purple"
+    color: "purple",
   },
   data_layer: {
     name: "data_layer",
-    color: "green"
+    color: "green",
   },
   front_end: {
     name: "front_end",
-    color: "turquoise"
+    color: "turquoise",
   },
   java_script_flavors: {
     name: "java_script_flavors",
-    color: "yellow"
+    color: "yellow",
   },
   mobile_desktop: {
     name: "mobile_desktop",
-    color: "blue"
+    color: "blue",
   },
   testing: {
     name: "testing",
-    color: "orange"
+    color: "orange",
   },
   utility_libraries: {
     name: "utility_libraries",
-    color: "red"
-  }
+    color: "red",
+  },
 };
 
 const elements = [
@@ -49,7 +49,7 @@ const elements = [
     shortName: "Es",
     name: "ES6",
     row: 2,
-    column: 1
+    column: 1,
   },
   {
     id: "type_script",
@@ -59,7 +59,7 @@ const elements = [
     name: "TypeScript",
     row: 1,
     column: 1,
-    repo: "https://github.com/Microsoft/TypeScript"
+    repo: "https://github.com/Microsoft/TypeScript",
   },
   {
     id: "flow",
@@ -69,7 +69,7 @@ const elements = [
     name: "Flow",
     row: 1,
     column: 2,
-    repo: "https://github.com/facebook/flow"
+    repo: "https://github.com/facebook/flow",
   },
   {
     id: "reason",
@@ -79,7 +79,7 @@ const elements = [
     name: "Reason",
     row: 4,
     column: 1,
-    repo: "https://github.com/facebook/reason"
+    repo: "https://github.com/facebook/reason",
   },
   {
     id: "elm",
@@ -88,7 +88,7 @@ const elements = [
     shortName: "El",
     name: "Elm",
     row: 5,
-    column: 1
+    column: 1,
   },
   {
     id: "clojure_script",
@@ -98,7 +98,7 @@ const elements = [
     name: "ClojureScript",
     row: 3,
     column: 1,
-    repo: "https://github.com/clojure/clojurescript"
+    repo: "https://github.com/clojure/clojurescript",
   },
   {
     id: "react",
@@ -108,7 +108,7 @@ const elements = [
     name: "React",
     row: 2,
     column: 2,
-    repo: "https://github.com/facebook/react"
+    repo: "https://github.com/facebook/react",
   },
   {
     id: "vue_js",
@@ -118,7 +118,7 @@ const elements = [
     name: "Vue.js",
     row: 3,
     column: 2,
-    repo: "https://github.com/vuejs/vue"
+    repo: "https://github.com/vuejs/vue",
   },
   {
     id: "angular",
@@ -128,7 +128,7 @@ const elements = [
     name: "Angular",
     row: 3,
     column: 3,
-    repo: "https://github.com/angular/angular"
+    repo: "https://github.com/angular/angular",
   },
   {
     id: "preact",
@@ -138,7 +138,7 @@ const elements = [
     name: "Preact",
     row: 3,
     column: 6,
-    repo: "https://github.com/developit/preact"
+    repo: "https://github.com/developit/preact",
   },
   {
     id: "ember",
@@ -148,7 +148,7 @@ const elements = [
     name: "Ember",
     row: 3,
     column: 5,
-    repo: "https://github.com/emberjs/ember.js"
+    repo: "https://github.com/emberjs/ember.js",
   },
   {
     id: "polymer",
@@ -158,7 +158,7 @@ const elements = [
     name: "Polymer",
     row: 3,
     column: 4,
-    repo: "https://github.com/Polymer/polymer"
+    repo: "https://github.com/Polymer/polymer",
   },
   {
     id: "redux",
@@ -168,7 +168,7 @@ const elements = [
     name: "Redux",
     row: 2,
     column: 6,
-    repo: "https://github.com/reduxjs/redux"
+    repo: "https://github.com/reduxjs/redux",
   },
   {
     id: "graph_ql",
@@ -178,7 +178,7 @@ const elements = [
     name: "GraphQL",
     row: 3,
     column: 7,
-    repo: "https://github.com/graphql/graphql-js"
+    repo: "https://github.com/graphql/graphql-js",
   },
   {
     id: "apollo",
@@ -188,7 +188,7 @@ const elements = [
     name: "Apollo",
     row: 4,
     column: 9,
-    repo: "https://github.com/apollographql/apollo-client"
+    repo: "https://github.com/apollographql/apollo-client",
   },
   {
     id: "mobx",
@@ -198,7 +198,7 @@ const elements = [
     name: "MobX",
     row: 5,
     column: 9,
-    repo: "https://github.com/mobxjs/mobx"
+    repo: "https://github.com/mobxjs/mobx",
   },
   {
     id: "relay",
@@ -208,7 +208,7 @@ const elements = [
     name: "Relay",
     row: 4,
     column: 8,
-    repo: "https://github.com/facebook/relay"
+    repo: "https://github.com/facebook/relay",
   },
   {
     id: "express",
@@ -218,7 +218,7 @@ const elements = [
     name: "Express",
     row: 4,
     column: 2,
-    repo: "https://github.com/expressjs/express"
+    repo: "https://github.com/expressjs/express",
   },
   {
     id: "next_js",
@@ -228,7 +228,7 @@ const elements = [
     name: "Next.js",
     row: 4,
     column: 4,
-    repo: "https://github.com/zeit/next.js"
+    repo: "https://github.com/zeit/next.js",
   },
   {
     id: "koa",
@@ -238,7 +238,7 @@ const elements = [
     name: "Koa",
     row: 4,
     column: 6,
-    repo: "https://github.com/koajs/koa"
+    repo: "https://github.com/koajs/koa",
   },
   {
     id: "meteor",
@@ -248,7 +248,7 @@ const elements = [
     name: "Meteor",
     row: 4,
     column: 3,
-    repo: "https://github.com/meteor/meteor"
+    repo: "https://github.com/meteor/meteor",
   },
   {
     id: "sails",
@@ -258,7 +258,7 @@ const elements = [
     name: "Sails",
     row: 4,
     column: 7,
-    repo: "https://github.com/balderdashy/sails"
+    repo: "https://github.com/balderdashy/sails",
   },
   {
     id: "feathers",
@@ -268,7 +268,7 @@ const elements = [
     name: "Feathers",
     row: 4,
     column: 5,
-    repo: "https://github.com/feathersjs/feathers"
+    repo: "https://github.com/feathersjs/feathers",
   },
   {
     id: "jest",
@@ -278,7 +278,7 @@ const elements = [
     name: "Jest",
     row: 5,
     column: 3,
-    repo: "https://github.com/facebook/jest"
+    repo: "https://github.com/facebook/jest",
   },
   {
     id: "mocha",
@@ -288,7 +288,7 @@ const elements = [
     name: "Mocha",
     row: 5,
     column: 4,
-    repo: "https://github.com/mochajs/mocha"
+    repo: "https://github.com/mochajs/mocha",
   },
   {
     id: "jasmine",
@@ -298,7 +298,7 @@ const elements = [
     name: "Jasmine",
     row: 5,
     column: 7,
-    repo: "https://github.com/jasmine/jasmine"
+    repo: "https://github.com/jasmine/jasmine",
   },
   {
     id: "enzyme",
@@ -308,7 +308,7 @@ const elements = [
     name: "Enzyme",
     row: 5,
     column: 6,
-    repo: "https://github.com/airbnb/enzyme"
+    repo: "https://github.com/airbnb/enzyme",
   },
   {
     id: "karma",
@@ -318,7 +318,7 @@ const elements = [
     name: "Karma",
     row: 5,
     column: 8,
-    repo: "https://github.com/karma-runner/karma"
+    repo: "https://github.com/karma-runner/karma",
   },
   {
     id: "storybook",
@@ -328,7 +328,7 @@ const elements = [
     name: "Storybook",
     row: 5,
     column: 2,
-    repo: "https://github.com/storybooks/storybook"
+    repo: "https://github.com/storybooks/storybook",
   },
   {
     id: "ava",
@@ -338,7 +338,7 @@ const elements = [
     name: "Ava",
     row: 5,
     column: 5,
-    repo: "https://github.com/avajs/ava"
+    repo: "https://github.com/avajs/ava",
   },
   {
     id: "electron",
@@ -348,7 +348,7 @@ const elements = [
     name: "Electron",
     row: 2,
     column: 7,
-    repo: "https://github.com/electron/electron"
+    repo: "https://github.com/electron/electron",
   },
   {
     id: "react_native",
@@ -358,7 +358,7 @@ const elements = [
     name: "React Native",
     row: 1,
     column: 9,
-    repo: "https://github.com/facebook/react-native"
+    repo: "https://github.com/facebook/react-native",
   },
   {
     id: "native_apps",
@@ -367,7 +367,7 @@ const elements = [
     shortName: "Na",
     name: "Native Apps",
     row: 2,
-    column: 8
+    column: 8,
   },
   {
     id: "phone_gap_cordova",
@@ -377,7 +377,7 @@ const elements = [
     name: "Cordova",
     row: 3,
     column: 9,
-    repo: "https://github.com/apache/cordova-cli"
+    repo: "https://github.com/apache/cordova-cli",
   },
   {
     id: "ionic",
@@ -387,7 +387,7 @@ const elements = [
     name: "Ionic",
     row: 3,
     column: 8,
-    repo: "https://github.com/ionic-team/ionic"
+    repo: "https://github.com/ionic-team/ionic",
   },
   {
     id: "native_script",
@@ -397,8 +397,8 @@ const elements = [
     name: "NativeScript",
     row: 2,
     column: 9,
-    repo: "https://github.com/NativeScript/NativeScript"
-  }
+    repo: "https://github.com/NativeScript/NativeScript",
+  },
 ];
 
 const outputFile = path.join(__dirname, "..", "data", "processedData.json");
@@ -414,251 +414,247 @@ const questions = [
   {
     key: "mostUsed",
     name: "What are the most used technologies?",
-    filterFunction: questionUsage => d =>
+    filterFunction: (questionUsage) => (d) =>
       d[questionUsage] &&
       ["👍 Used it > Would use again", "👎 Used it > Would avoid"].includes(
         d[questionUsage]
-      )
+      ),
   },
   {
     key: "mostInteresting",
     name: "What are the technologies with the highest interest?",
-    filterFunction: questionUsage => d =>
+    filterFunction: (questionUsage) => (d) =>
       d[questionUsage] &&
       [
         "👍 Used it > Would use again",
-        "✅ Heard of it > Would like to learn"
-      ].includes(d[questionUsage])
+        "✅ Heard of it > Would like to learn",
+      ].includes(d[questionUsage]),
   },
   {
     key: "mostUnknown",
     name: "What are the most unknown technologies?",
-    filterFunction: questionUsage => d =>
+    filterFunction: (questionUsage) => (d) =>
       d[questionUsage] &&
-      ["🤷 Never heard of it/Not sure what it is"].includes(d[questionUsage])
-  }
+      ["🤷 Never heard of it/Not sure what it is"].includes(d[questionUsage]),
+  },
 ];
 
 const pros = [
   {
     key: "bestDocumentation",
     name: "📖 Good documentation",
-    question: "What are the best documented technologies?"
+    question: "What are the best documented technologies?",
   },
   {
     key: "mostEasyToLearn",
     name: "👶 Easy learning curve",
-    question: "What are the easiest technologies to learn?"
+    question: "What are the easiest technologies to learn?",
   },
   {
     key: "bestPerformance",
     name: "⚡ Fast performance",
-    question: "What are the most preformant technologies?"
+    question: "What are the most preformant technologies?",
   },
   {
     key: "mostFullyFeatured",
     name: "🕹️ Full-featured & powerful",
-    question: "What are the most fully featured technologies?"
+    question: "What are the most fully featured technologies?",
   },
   {
     key: "lightest",
     name: "🎈 Simple & lightweight",
-    question: "What are the lightest technologies?"
+    question: "What are the lightest technologies?",
   },
   {
     key: "highestMomentum",
     name: "📈 Growing momentum/popularity",
-    question: "What are the technologies with the most momentum?"
+    question: "What are the technologies with the most momentum?",
   },
   {
     key: "biggestPackageEcosystem",
     name: "🎁 Rich package ecosystem",
-    question: "What are the technologies with the biggest package ecosystem?"
+    question: "What are the technologies with the biggest package ecosystem?",
   },
   {
     key: "mostElegantStyle",
     name: "⚙️ Elegant programming style & patterns",
     question:
-      "What are the technologies with the most elegant programming style?"
+      "What are the technologies with the most elegant programming style?",
   },
   {
     key: "mostRobust",
     name: "🐞 Robust, less error-prone code",
-    question: "What are the technologies producing the most robust code?"
+    question: "What are the technologies producing the most robust code?",
   },
   {
     key: "mostStable",
     name: "⚖️ Stable & backwards-compatible",
-    question: "What are the most stable technologies?"
+    question: "What are the most stable technologies?",
   },
   {
     key: "bestCompany",
     name: "👫 Backed by a great team/company",
-    question: "What are the technologies powered by the best team?"
+    question: "What are the technologies powered by the best team?",
   },
   {
     key: "bestTooling",
     name: "🔧 Powerful developer tooling",
-    question: "What are the technologies with the best tooling?"
+    question: "What are the technologies with the best tooling?",
   },
   {
     key: "bestEstablished",
     name: "🏛️ Well-established option",
-    question: "What are the most established technologies?"
-  }
+    question: "What are the most established technologies?",
+  },
 ];
 
 const cons = [
   {
     key: "worstDocumentation",
     name: "📖 Bad documentation",
-    question: "What are the technologies with the worst documentation?"
+    question: "What are the technologies with the worst documentation?",
   },
   {
     key: "mostConcern",
     name: "👫 Concerns about the team/company",
     question:
-      "What are the technologies with the most concerns about the company behind them?"
+      "What are the technologies with the most concerns about the company behind them?",
   },
   {
     key: "mostComplex",
     name: "🎈 Bloated & complex",
-    question: "What are the most bloated and complex technologies?"
+    question: "What are the most bloated and complex technologies?",
   },
   {
     key: "mostBuggy",
     name: "🐞 Buggy, error-prone code",
-    question: "What are the most buggy technologies?"
+    question: "What are the most buggy technologies?",
   },
   {
     key: "mostClumsy",
     name: "⚙️ Clumsy programming style",
-    question: "What are the most clumsy technologies?"
+    question: "What are the most clumsy technologies?",
   },
   {
     key: "fastestChanging",
     name: "⚖️ Fast-changing & breaks often",
-    question: "What are the fastest changing technologies?"
+    question: "What are the fastest changing technologies?",
   },
   {
     key: "fewestPackages",
     name: "🎁 Small package ecosystem",
-    question: "What are the technologies with the fewest packages?"
+    question: "What are the technologies with the fewest packages?",
   },
   {
     key: "hardestToLearn",
     name: "👶 Hard learning curve",
-    question: "What are the technologies that are hardest to learn?"
+    question: "What are the technologies that are hardest to learn?",
   },
   {
     key: "leastTooling",
     name: "🔧 Lacking developer tooling",
-    question: "What are the technologies with the least tooling?"
+    question: "What are the technologies with the least tooling?",
   },
   {
     key: "mostLimited",
     name: "🕹️ Limited & lacking in features",
-    question: "What are the most limited technologies?"
+    question: "What are the most limited technologies?",
   },
   {
     key: "lowestMomentum",
     name: "📉 Diminishing momentum/popularity",
-    question: "What are the technologies with the lowest momentum?"
+    question: "What are the technologies with the lowest momentum?",
   },
   {
     key: "mostNewAndUntested",
     name: "🏛️ New untested option",
-    question: "What are the most new and untested technologies?"
+    question: "What are the most new and untested technologies?",
   },
   {
     key: "leastPerformance",
     name: "⚡ Poor performance",
-    question: "What are the least performant technologies?"
-  }
+    question: "What are the least performant technologies?",
+  },
 ];
 
 const metrics = [
   {
     key: "java_script_is_moving_in_the_right_direction",
-    name: "Is JavaScript moving in the right direction?"
+    name: "Is JavaScript moving in the right direction?",
   },
   {
     key: "building_java_script_apps_is_overly_complex_right_now",
-    name: "Is building JavaScript apps overly complex right now?"
+    name: "Is building JavaScript apps overly complex right now?",
   },
   {
     key: "java_script_is_over_used_online",
-    name: "Is JavaScript over used online?"
+    name: "Is JavaScript over used online?",
   },
   {
     key: "i_enjoy_building_java_script_apps",
-    name: "Do you enjoy building JavaScript apps?"
+    name: "Do you enjoy building JavaScript apps?",
   },
   {
     key: "i_would_like_java_script_to_be_my_main_programming_language",
-    name: "Would you like JavaScript to be your main programming language?"
+    name: "Would you like JavaScript to be your main programming language?",
   },
   {
     key: "the_java_script_ecosystem_is_changing_too_fast",
-    name: "Is the JavaScript ecosystem changing too fast?"
+    name: "Is the JavaScript ecosystem changing too fast?",
   },
   {
     key: "this_survey_is_too_damn_long",
-    name: "Is this survey too damn long?"
-  }
+    name: "Is this survey too damn long?",
+  },
 ];
 
-elements.forEach(element => {
+elements.forEach((element) => {
   const questionUsage = `${element.category.name}_${element.id}`;
-  const questionPros = `${element.category.name}_what_do_you_like_👍_about_${
-    element.id
-  }`;
-  const questionCons = `${element.category.name}_what_do_you_dislike_👎_about_${
-    element.id
-  }`;
+  const questionPros = `${element.category.name}_what_do_you_like_👍_about_${element.id}`;
+  const questionCons = `${element.category.name}_what_do_you_dislike_👎_about_${element.id}`;
   const relevantProDatapoints = rawData.filter(
-    d => d[questionUsage] === "👍 Used it > Would use again"
+    (d) => d[questionUsage] === "👍 Used it > Would use again"
   );
   const relevantConDatapoints = rawData.filter(
-    d => d[questionUsage] === "👎 Used it > Would avoid"
+    (d) => d[questionUsage] === "👎 Used it > Would avoid"
   );
 
   element.values = {};
   element.metrics = {};
 
-  questions.forEach(question => {
+  questions.forEach((question) => {
     const counts = rawData.filter(question.filterFunction(questionUsage))
       .length;
     element.values[question.key] = {
       counts,
-      percents: counts / numberOfDatapoints
+      percents: counts / numberOfDatapoints,
     };
   });
 
-  pros.forEach(pro => {
+  pros.forEach((pro) => {
     const counts = relevantProDatapoints.filter(
-      d => d[questionPros] && d[questionPros].includes(pro.name)
+      (d) => d[questionPros] && d[questionPros].includes(pro.name)
     ).length;
     element.values[pro.key] = {
       counts,
-      percents: counts / relevantProDatapoints.length
+      percents: counts / relevantProDatapoints.length,
     };
   });
 
-  cons.forEach(con => {
+  cons.forEach((con) => {
     const counts = relevantConDatapoints.filter(
-      d => d[questionCons] && d[questionCons].includes(con.name)
+      (d) => d[questionCons] && d[questionCons].includes(con.name)
     ).length;
     element.values[con.key] = {
       counts,
-      percents: counts / relevantConDatapoints.length
+      percents: counts / relevantConDatapoints.length,
     };
   });
 
-  metrics.forEach(metric => {
+  metrics.forEach((metric) => {
     const question = `opinion_questions_${metric.key}`;
     const relevantDatapoints = rawData.filter(
-      d =>
+      (d) =>
         d[question] &&
         ["👍 Used it > Would use again", "👎 Used it > Would avoid"].includes(
           d[questionUsage]
@@ -672,20 +668,18 @@ elements.forEach(element => {
   element.story = {
     flavorUsers: [],
     flavorAvoiders: [],
-    utilityLibraries: []
+    utilityLibraries: [],
   };
 
   elements
-    .filter(e => e.category === categories.java_script_flavors)
-    .forEach(flavor => {
-      const flavorQuestion = `${categories.java_script_flavors.name}_${
-        flavor.id
-      }`;
+    .filter((e) => e.category === categories.java_script_flavors)
+    .forEach((flavor) => {
+      const flavorQuestion = `${categories.java_script_flavors.name}_${flavor.id}`;
       const flavorUsers = relevantProDatapoints.filter(
-        d => d[flavorQuestion] === "👍 Used it > Would use again"
+        (d) => d[flavorQuestion] === "👍 Used it > Would use again"
       );
       const flavorAvoiders = relevantProDatapoints.filter(
-        d => d[flavorQuestion] === "👎 Used it > Would avoid"
+        (d) => d[flavorQuestion] === "👎 Used it > Would avoid"
       );
 
       if (flavorUsers.length / relevantProDatapoints.length >= 0.5) {
@@ -697,12 +691,12 @@ elements.forEach(element => {
     });
 
   element.story.front_end = elements
-    .filter(e => e.category === categories.front_end)
+    .filter((e) => e.category === categories.front_end)
     .reduce(
       (acc, frontend) => {
         const frontendQuestion = `${categories.front_end.name}_${frontend.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[frontendQuestion] === "👍 Used it > Would use again"
+          (d) => d[frontendQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.frontend || acc.score < score)
           return { frontend: frontend.name, score };
@@ -712,14 +706,12 @@ elements.forEach(element => {
     ).frontend;
 
   element.story.data_layer = elements
-    .filter(e => e.category === categories.data_layer)
+    .filter((e) => e.category === categories.data_layer)
     .reduce(
       (acc, dataLayer) => {
-        const dataLayerQuestion = `${categories.data_layer.name}_${
-          dataLayer.id
-        }`;
+        const dataLayerQuestion = `${categories.data_layer.name}_${dataLayer.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[dataLayerQuestion] === "👍 Used it > Would use again"
+          (d) => d[dataLayerQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.dataLayer || acc.score < score)
           return { dataLayer: dataLayer.name, score };
@@ -729,12 +721,12 @@ elements.forEach(element => {
     ).dataLayer;
 
   element.story.back_end = elements
-    .filter(e => e.category === categories.back_end)
+    .filter((e) => e.category === categories.back_end)
     .reduce(
       (acc, backend) => {
         const backendQuestion = `${categories.back_end.name}_${backend.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[backendQuestion] === "👍 Used it > Would use again"
+          (d) => d[backendQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.backend || acc.score < score)
           return { backend: backend.name, score };
@@ -744,12 +736,12 @@ elements.forEach(element => {
     ).backend;
 
   element.story.testing = elements
-    .filter(e => e.category === categories.testing)
+    .filter((e) => e.category === categories.testing)
     .reduce(
       (acc, testing) => {
         const testingQuestion = `${categories.testing.name}_${testing.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[testingQuestion] === "👍 Used it > Would use again"
+          (d) => d[testingQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.testing || acc.score < score)
           return { testing: testing.name, score };
@@ -759,14 +751,12 @@ elements.forEach(element => {
     ).testing;
 
   element.story.mobile_desktop = elements
-    .filter(e => e.category === categories.mobile_desktop)
+    .filter((e) => e.category === categories.mobile_desktop)
     .reduce(
       (acc, mobileDesktop) => {
-        const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${
-          mobileDesktop.id
-        }`;
+        const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${mobileDesktop.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
+          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.mobileDesktop || acc.score < score)
           return { mobileDesktop: mobileDesktop.name, score };
@@ -776,14 +766,12 @@ elements.forEach(element => {
     ).mobileDesktop;
 
   element.story.mobile_desktop = elements
-    .filter(e => e.category === categories.mobile_desktop)
+    .filter((e) => e.category === categories.mobile_desktop)
     .reduce(
       (acc, mobileDesktop) => {
-        const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${
-          mobileDesktop.id
-        }`;
+        const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${mobileDesktop.id}`;
         const score = relevantProDatapoints.filter(
-          d => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
+          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
         ).length;
         if (!acc.mobileDesktop || acc.score < score)
           return { mobileDesktop: mobileDesktop.name, score };
@@ -799,12 +787,12 @@ elements.forEach(element => {
     "Gulp",
     "Grunt",
     "Parcel",
-    "Browserify"
+    "Browserify",
   ].reduce(
     (acc, buildTool) => {
       const score = relevantProDatapoints
-        .filter(d => d.other_tools_build_tools)
-        .filter(d => d.other_tools_build_tools.includes(buildTool)).length;
+        .filter((d) => d.other_tools_build_tools)
+        .filter((d) => d.other_tools_build_tools.includes(buildTool)).length;
       if (!acc.buildTool || acc.score < score) return { buildTool, score };
       return acc;
     },
@@ -812,10 +800,12 @@ elements.forEach(element => {
   ).buildTool;
 
   ["jQuery", "Moment", "Underscore", "Lodash", "Date-fns", "Ramda"].forEach(
-    utilityLibrary => {
+    (utilityLibrary) => {
       const users = relevantProDatapoints
-        .filter(d => d.other_tools_utility_libraries)
-        .filter(d => d.other_tools_utility_libraries.includes(utilityLibrary));
+        .filter((d) => d.other_tools_utility_libraries)
+        .filter((d) =>
+          d.other_tools_utility_libraries.includes(utilityLibrary)
+        );
       if (users.length / relevantProDatapoints.length >= 0.5)
         element.story.utilityLibraries.push(utilityLibrary);
     }
@@ -827,12 +817,12 @@ elements.forEach(element => {
     "Vim",
     "Sublime Text",
     "Atom",
-    "Emacs"
+    "Emacs",
   ].reduce(
     (acc, textEditor) => {
       const score = relevantProDatapoints
-        .filter(d => d.other_tools_text_editors)
-        .filter(d => d.other_tools_text_editors.includes(textEditor)).length;
+        .filter((d) => d.other_tools_text_editors)
+        .filter((d) => d.other_tools_text_editors.includes(textEditor)).length;
       if (!acc.textEditor || acc.score < score) return { textEditor, score };
       return acc;
     },
@@ -840,7 +830,7 @@ elements.forEach(element => {
   ).textEditor;
 });
 
-questions.forEach(question => {
+questions.forEach((question) => {
   elements
     .sort(
       (element1, element2) =>
@@ -862,7 +852,7 @@ questions.forEach(question => {
     });
 });
 
-pros.forEach(pro => {
+pros.forEach((pro) => {
   elements
     .sort(
       (element1, element2) =>
@@ -882,7 +872,7 @@ pros.forEach(pro => {
     });
 });
 
-cons.forEach(con => {
+cons.forEach((con) => {
   elements
     .sort(
       (element1, element2) =>
@@ -904,25 +894,25 @@ cons.forEach(con => {
 
 const maximumsForQuestions = {};
 
-[...questions, ...pros, ...cons].forEach(question => {
+[...questions, ...pros, ...cons].forEach((question) => {
   maximumsForQuestions[question.key] = {};
   maximumsForQuestions[question.key].counts = elements
-    .map(e => e.values[question.key].counts)
+    .map((e) => e.values[question.key].counts)
     .reduce((max, current) => Math.max(max, current), 0);
   maximumsForQuestions[question.key].percents = elements
-    .map(e => e.values[question.key].percents)
+    .map((e) => e.values[question.key].percents)
     .reduce((max, current) => Math.max(max, current), 0);
 });
 
 const minimumsForMetrics = {};
 const maximumsForMetrics = {};
 
-metrics.forEach(metric => {
+metrics.forEach((metric) => {
   minimumsForMetrics[metric.key] = elements
-    .map(e => e.metrics[metric.key])
+    .map((e) => e.metrics[metric.key])
     .reduce((min, current) => Math.min(min, current), 5);
   maximumsForMetrics[metric.key] = elements
-    .map(e => e.metrics[metric.key])
+    .map((e) => e.metrics[metric.key])
     .reduce((max, current) => Math.max(max, current), 0);
 });
 
@@ -938,7 +928,7 @@ fs.appendFileSync(
       numberOfDatapoints,
       maximumsForQuestions,
       minimumsForMetrics,
-      maximumsForMetrics
+      maximumsForMetrics,
     },
     null,
     2

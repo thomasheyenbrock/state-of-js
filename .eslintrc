@@ -1,9 +1,10 @@
 {
   "root": true,
-  "env": {"browser": true},
+  "env": { "browser": true },
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
   "rules": {
+    "react/destructuring-assignment": ["error", "never"],
     "react/jsx-filename-extension": "off",
     "react/jsx-one-expression-per-line": "off"
   }

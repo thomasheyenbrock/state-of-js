@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
@@ -23,7 +25,7 @@ const isLocalhost = Boolean(
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
-    .then(registration => {
+    .then((registration) => {
       // eslint-disable-next-line no-param-reassign
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
@@ -60,7 +62,7 @@ function registerValidSW(swUrl, config) {
         };
       };
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error during service worker registration:", error);
     });
 }
@@ -68,7 +70,7 @@ function registerValidSW(swUrl, config) {
 function checkValidServiceWorker(swUrl, config) {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl)
-    .then(response => {
+    .then((response) => {
       // Ensure service worker exists, and that we really are getting a JS file.
       const contentType = response.headers.get("content-type");
       if (
@@ -76,7 +78,7 @@ function checkValidServiceWorker(swUrl, config) {
         (contentType != null && contentType.indexOf("javascript") === -1)
       ) {
         // No service worker found. Probably a different app. Reload the page.
-        navigator.serviceWorker.ready.then(registration => {
+        navigator.serviceWorker.ready.then((registration) => {
           registration.unregister().then(() => {
             window.location.reload();
           });
@@ -129,7 +131,7 @@ export function register(config) {
 
 export function unregister() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.ready.then(registration => {
+    navigator.serviceWorker.ready.then((registration) => {
       registration.unregister();
     });
   }
