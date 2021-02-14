@@ -15,6 +15,7 @@
     "styled-components": "4.4.1"
   },
   "scripts": {
+    "postinstall": "husky install",
     "start": "react-scripts start",
     "process": "node src/scripts/processData.js",
     "lint": "eslint .",
@@ -37,14 +38,9 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-prettier": "3.3.1",
-    "husky": "4.3.8",
+    "husky": "5.0.9",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": [
