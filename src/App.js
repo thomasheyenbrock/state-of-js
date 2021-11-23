@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import GlobalStyles from "./components/GlobalStyle";
 import HomePage from "./components/HomePage";
@@ -7,12 +7,10 @@ import HomePage from "./components/HomePage";
 const App = () => (
   <React.Suspense fallback="loading">
     <GlobalStyles />
-    <Switch>
-      <Route exact path="/">
-        <HomePage />
-      </Route>
-      <Redirect to="/" />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   </React.Suspense>
 );
 
