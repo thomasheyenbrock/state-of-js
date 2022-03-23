@@ -623,8 +623,9 @@ elements.forEach((element) => {
   element.metrics = {};
 
   questions.forEach((question) => {
-    const counts = rawData.filter(question.filterFunction(questionUsage))
-      .length;
+    const counts = rawData.filter(
+      question.filterFunction(questionUsage)
+    ).length;
     element.values[question.key] = {
       counts,
       percents: counts / numberOfDatapoints,

@@ -5,11 +5,8 @@ import styled, { css } from "styled-components";
 import Overlay from "./Overlay";
 import processedData from "../data/processedData.json";
 
-const {
-  minimumsForMetrics,
-  maximumsForMetrics,
-  maximumsForQuestions,
-} = processedData;
+const { minimumsForMetrics, maximumsForMetrics, maximumsForQuestions } =
+  processedData;
 
 const getHeightByNumbers = (props) =>
   props.numbers === "counts"
