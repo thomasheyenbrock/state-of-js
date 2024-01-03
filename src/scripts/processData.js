@@ -417,7 +417,7 @@ const questions = [
     filterFunction: (questionUsage) => (d) =>
       d[questionUsage] &&
       ["👍 Used it > Would use again", "👎 Used it > Would avoid"].includes(
-        d[questionUsage]
+        d[questionUsage],
       ),
   },
   {
@@ -613,10 +613,10 @@ elements.forEach((element) => {
   const questionPros = `${element.category.name}_what_do_you_like_👍_about_${element.id}`;
   const questionCons = `${element.category.name}_what_do_you_dislike_👎_about_${element.id}`;
   const relevantProDatapoints = rawData.filter(
-    (d) => d[questionUsage] === "👍 Used it > Would use again"
+    (d) => d[questionUsage] === "👍 Used it > Would use again",
   );
   const relevantConDatapoints = rawData.filter(
-    (d) => d[questionUsage] === "👎 Used it > Would avoid"
+    (d) => d[questionUsage] === "👎 Used it > Would avoid",
   );
 
   element.values = {};
@@ -624,7 +624,7 @@ elements.forEach((element) => {
 
   questions.forEach((question) => {
     const counts = rawData.filter(
-      question.filterFunction(questionUsage)
+      question.filterFunction(questionUsage),
     ).length;
     element.values[question.key] = {
       counts,
@@ -634,7 +634,7 @@ elements.forEach((element) => {
 
   pros.forEach((pro) => {
     const counts = relevantProDatapoints.filter(
-      (d) => d[questionPros] && d[questionPros].includes(pro.name)
+      (d) => d[questionPros] && d[questionPros].includes(pro.name),
     ).length;
     element.values[pro.key] = {
       counts,
@@ -644,7 +644,7 @@ elements.forEach((element) => {
 
   cons.forEach((con) => {
     const counts = relevantConDatapoints.filter(
-      (d) => d[questionCons] && d[questionCons].includes(con.name)
+      (d) => d[questionCons] && d[questionCons].includes(con.name),
     ).length;
     element.values[con.key] = {
       counts,
@@ -658,8 +658,8 @@ elements.forEach((element) => {
       (d) =>
         d[question] &&
         ["👍 Used it > Would use again", "👎 Used it > Would avoid"].includes(
-          d[questionUsage]
-        )
+          d[questionUsage],
+        ),
     );
     element.metrics[metric.key] =
       relevantDatapoints.reduce((sum, current) => sum + current[question], 0) /
@@ -677,10 +677,10 @@ elements.forEach((element) => {
     .forEach((flavor) => {
       const flavorQuestion = `${categories.java_script_flavors.name}_${flavor.id}`;
       const flavorUsers = relevantProDatapoints.filter(
-        (d) => d[flavorQuestion] === "👍 Used it > Would use again"
+        (d) => d[flavorQuestion] === "👍 Used it > Would use again",
       );
       const flavorAvoiders = relevantProDatapoints.filter(
-        (d) => d[flavorQuestion] === "👎 Used it > Would avoid"
+        (d) => d[flavorQuestion] === "👎 Used it > Would avoid",
       );
 
       if (flavorUsers.length / relevantProDatapoints.length >= 0.5) {
@@ -697,13 +697,13 @@ elements.forEach((element) => {
       (acc, frontend) => {
         const frontendQuestion = `${categories.front_end.name}_${frontend.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[frontendQuestion] === "👍 Used it > Would use again"
+          (d) => d[frontendQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.frontend || acc.score < score)
           return { frontend: frontend.name, score };
         return acc;
       },
-      { score: 0, frontend: null }
+      { score: 0, frontend: null },
     ).frontend;
 
   element.story.data_layer = elements
@@ -712,13 +712,13 @@ elements.forEach((element) => {
       (acc, dataLayer) => {
         const dataLayerQuestion = `${categories.data_layer.name}_${dataLayer.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[dataLayerQuestion] === "👍 Used it > Would use again"
+          (d) => d[dataLayerQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.dataLayer || acc.score < score)
           return { dataLayer: dataLayer.name, score };
         return acc;
       },
-      { score: 0, dataLayer: null }
+      { score: 0, dataLayer: null },
     ).dataLayer;
 
   element.story.back_end = elements
@@ -727,13 +727,13 @@ elements.forEach((element) => {
       (acc, backend) => {
         const backendQuestion = `${categories.back_end.name}_${backend.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[backendQuestion] === "👍 Used it > Would use again"
+          (d) => d[backendQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.backend || acc.score < score)
           return { backend: backend.name, score };
         return acc;
       },
-      { score: 0, backend: null }
+      { score: 0, backend: null },
     ).backend;
 
   element.story.testing = elements
@@ -742,13 +742,13 @@ elements.forEach((element) => {
       (acc, testing) => {
         const testingQuestion = `${categories.testing.name}_${testing.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[testingQuestion] === "👍 Used it > Would use again"
+          (d) => d[testingQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.testing || acc.score < score)
           return { testing: testing.name, score };
         return acc;
       },
-      { score: 0, testing: null }
+      { score: 0, testing: null },
     ).testing;
 
   element.story.mobile_desktop = elements
@@ -757,13 +757,13 @@ elements.forEach((element) => {
       (acc, mobileDesktop) => {
         const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${mobileDesktop.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
+          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.mobileDesktop || acc.score < score)
           return { mobileDesktop: mobileDesktop.name, score };
         return acc;
       },
-      { score: 0, mobileDesktop: null }
+      { score: 0, mobileDesktop: null },
     ).mobileDesktop;
 
   element.story.mobile_desktop = elements
@@ -772,13 +772,13 @@ elements.forEach((element) => {
       (acc, mobileDesktop) => {
         const mobileDesktopQuestion = `${categories.mobile_desktop.name}_${mobileDesktop.id}`;
         const score = relevantProDatapoints.filter(
-          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again"
+          (d) => d[mobileDesktopQuestion] === "👍 Used it > Would use again",
         ).length;
         if (!acc.mobileDesktop || acc.score < score)
           return { mobileDesktop: mobileDesktop.name, score };
         return acc;
       },
-      { score: 0, mobileDesktop: null }
+      { score: 0, mobileDesktop: null },
     ).mobileDesktop;
 
   element.story.buildTool = [
@@ -797,7 +797,7 @@ elements.forEach((element) => {
       if (!acc.buildTool || acc.score < score) return { buildTool, score };
       return acc;
     },
-    { score: 0, buildTool: null }
+    { score: 0, buildTool: null },
   ).buildTool;
 
   ["jQuery", "Moment", "Underscore", "Lodash", "Date-fns", "Ramda"].forEach(
@@ -805,11 +805,11 @@ elements.forEach((element) => {
       const users = relevantProDatapoints
         .filter((d) => d.other_tools_utility_libraries)
         .filter((d) =>
-          d.other_tools_utility_libraries.includes(utilityLibrary)
+          d.other_tools_utility_libraries.includes(utilityLibrary),
         );
       if (users.length / relevantProDatapoints.length >= 0.5)
         element.story.utilityLibraries.push(utilityLibrary);
-    }
+    },
   );
 
   element.story.textEditor = [
@@ -827,7 +827,7 @@ elements.forEach((element) => {
       if (!acc.textEditor || acc.score < score) return { textEditor, score };
       return acc;
     },
-    { score: 0, textEditor: null }
+    { score: 0, textEditor: null },
   ).textEditor;
 });
 
@@ -836,7 +836,7 @@ questions.forEach((question) => {
     .sort(
       (element1, element2) =>
         element1.values[question.key].counts -
-        element2.values[question.key].counts
+        element2.values[question.key].counts,
     )
     .forEach((element, index) => {
       element.sort[question.key] = {};
@@ -846,7 +846,7 @@ questions.forEach((question) => {
     .sort(
       (element1, element2) =>
         element1.values[question.key].percents -
-        element2.values[question.key].percents
+        element2.values[question.key].percents,
     )
     .forEach((element, index) => {
       element.sort[question.key].percents = index + 1;
@@ -857,7 +857,7 @@ pros.forEach((pro) => {
   elements
     .sort(
       (element1, element2) =>
-        element1.values[pro.key].counts - element2.values[pro.key].counts
+        element1.values[pro.key].counts - element2.values[pro.key].counts,
     )
     .forEach((element, index) => {
       element.sort[pro.key] = {};
@@ -866,7 +866,7 @@ pros.forEach((pro) => {
   elements
     .sort(
       (element1, element2) =>
-        element1.values[pro.key].percents - element2.values[pro.key].percents
+        element1.values[pro.key].percents - element2.values[pro.key].percents,
     )
     .forEach((element, index) => {
       element.sort[pro.key].percents = index + 1;
@@ -877,7 +877,7 @@ cons.forEach((con) => {
   elements
     .sort(
       (element1, element2) =>
-        element1.values[con.key].counts - element2.values[con.key].counts
+        element1.values[con.key].counts - element2.values[con.key].counts,
     )
     .forEach((element, index) => {
       element.sort[con.key] = {};
@@ -886,7 +886,7 @@ cons.forEach((con) => {
   elements
     .sort(
       (element1, element2) =>
-        element1.values[con.key].percents - element2.values[con.key].percents
+        element1.values[con.key].percents - element2.values[con.key].percents,
     )
     .forEach((element, index) => {
       element.sort[con.key].percents = index + 1;
@@ -932,6 +932,6 @@ fs.appendFileSync(
       maximumsForMetrics,
     },
     null,
-    2
-  )
+    2,
+  ),
 );

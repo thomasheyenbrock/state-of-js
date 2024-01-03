@@ -97,7 +97,7 @@ const indexArray = [0, 1, 2, 3, 4];
 const Axis = (props) => {
   const metricObject = metrics.find((m) => m.key === props.metric);
   const viewObject = [...questions, ...pros, ...cons].find(
-    (q) => q.key === props.view
+    (q) => q.key === props.view,
   );
   return (
     <Wrapper metric={props.metric} view={props.view}>

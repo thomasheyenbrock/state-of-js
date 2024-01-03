@@ -116,7 +116,7 @@ const Filter = (props) => {
                       >
                         {v.name}
                       </Button>
-                    )
+                    ),
                 )}
               <Button {...getToggleButtonProps()}>
                 {selectedItem ? selectedItem.name : "Select a question..."}
@@ -174,7 +174,7 @@ const Filter = (props) => {
                       >
                         {m.name}
                       </Button>
-                    )
+                    ),
                 )}
               <Button {...getToggleButtonProps()}>
                 {selectedItem ? selectedItem.name : "Select a metric..."}

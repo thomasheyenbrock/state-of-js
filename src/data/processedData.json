@@ -260,15 +260,9 @@
         "this_survey_is_too_damn_long": 2.5265133740028154
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -539,14 +533,9 @@
         "this_survey_is_too_damn_long": 2.526808510638298
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Lodash"
-        ],
+        "utilityLibraries": ["Lodash"],
         "front_end": "Preact",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -816,16 +805,9 @@
         "this_survey_is_too_damn_long": 2.453362255965293
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript",
-          "Elm"
-        ],
+        "flavorUsers": ["ES6", "TypeScript", "Elm"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -1096,15 +1078,9 @@
         "this_survey_is_too_damn_long": 2.579465541490858
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Koa",
@@ -1375,14 +1351,9 @@
         "this_survey_is_too_damn_long": 2.5365168539325844
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Feathers",
@@ -1653,14 +1624,9 @@
         "this_survey_is_too_damn_long": 2.54317998385795
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Vue.js",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -1931,14 +1897,9 @@
         "this_survey_is_too_damn_long": 2.574468085106383
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "ClojureScript"
-        ],
+        "flavorUsers": ["ES6", "ClojureScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Lodash"
-        ],
+        "utilityLibraries": ["Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -2208,14 +2169,9 @@
         "this_survey_is_too_damn_long": 2.538958243650452
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -2486,14 +2442,9 @@
         "this_survey_is_too_damn_long": 2.55688622754491
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -2764,16 +2715,9 @@
         "this_survey_is_too_damn_long": 2.777456647398844
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript",
-          "Reason"
-        ],
+        "flavorUsers": ["ES6", "TypeScript", "Reason"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -3044,14 +2988,9 @@
         "this_survey_is_too_damn_long": 2.6917098445595853
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Relay",
         "back_end": "Express",
@@ -3322,15 +3261,9 @@
         "this_survey_is_too_damn_long": 2.5475618544319
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -3601,14 +3534,9 @@
         "this_survey_is_too_damn_long": 2.558302742388253
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -3879,15 +3807,9 @@
         "this_survey_is_too_damn_long": 2.5588235294117645
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "MobX",
         "back_end": "Express",
@@ -4158,15 +4080,9 @@
         "this_survey_is_too_damn_long": 2.527479782142268
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -4437,14 +4353,9 @@
         "this_survey_is_too_damn_long": 2.550754996945099
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -4715,15 +4626,9 @@
         "this_survey_is_too_damn_long": 2.5434954007884363
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -4994,14 +4899,9 @@
         "this_survey_is_too_damn_long": 2.6058631921824102
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Next.js",
@@ -5272,14 +5172,9 @@
         "this_survey_is_too_damn_long": 2.540689526301037
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -5550,15 +5445,9 @@
         "this_survey_is_too_damn_long": 2.5653543307086615
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Apollo",
         "back_end": "Express",
@@ -5829,14 +5718,9 @@
         "this_survey_is_too_damn_long": 2.5511742534067845
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "GraphQL",
         "back_end": "Express",
@@ -6107,14 +5991,9 @@
         "this_survey_is_too_damn_long": 2.569888609414301
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -6385,15 +6264,9 @@
         "this_survey_is_too_damn_long": 2.5679318907413977
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "Flow"
-        ],
+        "flavorUsers": ["ES6", "Flow"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -6664,15 +6537,9 @@
         "this_survey_is_too_damn_long": 2.5429316160686906
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -6943,15 +6810,9 @@
         "this_survey_is_too_damn_long": 2.518207282913165
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Polymer",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -7222,15 +7083,9 @@
         "this_survey_is_too_damn_long": 2.655982905982906
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Sails",
@@ -7501,14 +7356,9 @@
         "this_survey_is_too_damn_long": 2.552980132450331
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Ember",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -7779,15 +7629,9 @@
         "this_survey_is_too_damn_long": 2.550969559094356
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -8058,14 +7902,9 @@
         "this_survey_is_too_damn_long": 2.5381779884149553
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Meteor",
@@ -8336,15 +8175,9 @@
         "this_survey_is_too_damn_long": 2.492379835873388
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -8615,15 +8448,9 @@
         "this_survey_is_too_damn_long": 2.696969696969697
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -8894,15 +8721,9 @@
         "this_survey_is_too_damn_long": 2.5315985130111525
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -9173,14 +8994,9 @@
         "this_survey_is_too_damn_long": 2.6245517241379313
       },
       "story": {
-        "flavorUsers": [
-          "ES6"
-        ],
+        "flavorUsers": ["ES6"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -9451,15 +9267,9 @@
         "this_survey_is_too_damn_long": 2.653147933565083
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -9730,15 +9540,9 @@
         "this_survey_is_too_damn_long": 2.592918499895244
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "Angular",
         "data_layer": "Redux",
         "back_end": "Express",
@@ -10009,15 +9813,9 @@
         "this_survey_is_too_damn_long": 2.5642267160353174
       },
       "story": {
-        "flavorUsers": [
-          "ES6",
-          "TypeScript"
-        ],
+        "flavorUsers": ["ES6", "TypeScript"],
         "flavorAvoiders": [],
-        "utilityLibraries": [
-          "Moment",
-          "Lodash"
-        ],
+        "utilityLibraries": ["Moment", "Lodash"],
         "front_end": "React",
         "data_layer": "Redux",
         "back_end": "Express",

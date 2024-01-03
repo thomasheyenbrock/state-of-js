@@ -14,7 +14,7 @@ const elementsWithAdditionalInformation = Promise.all(
     try {
       const repoId = element.repo.replace("https://github.com/", "");
       const response = await fetch(
-        `https://api.github.com/repos/${repoId}?client_id=18b1af213b66674854b1&client_secret=5fab570119af1edcbbff934c7efc17dcab456c0c`
+        `https://api.github.com/repos/${repoId}?client_id=18b1af213b66674854b1&client_secret=5fab570119af1edcbbff934c7efc17dcab456c0c`,
       );
       const data = await response.json();
 
@@ -22,7 +22,7 @@ const elementsWithAdditionalInformation = Promise.all(
     } catch (err) {
       return element;
     }
-  })
+  }),
 );
 
 const Spinner = () => <span>loading...</span>;
