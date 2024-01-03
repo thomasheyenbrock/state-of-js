@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
     <button id="setFormId">neue formId</button>
   </body>
   <script>
-    !(function() {
+    !(function () {
       var analytics = (window.analytics = window.analytics || []);
       if (!analytics.initialize)
         if (analytics.invoked)
@@ -42,10 +42,10 @@
             "page",
             "once",
             "off",
-            "on"
+            "on",
           ];
-          analytics.factory = function(t) {
-            return function() {
+          analytics.factory = function (t) {
+            return function () {
               var e = Array.prototype.slice.call(arguments);
               e.unshift(t);
               analytics.push(e);
@@ -56,7 +56,7 @@
             var e = analytics.methods[t];
             analytics[e] = analytics.factory(e);
           }
-          analytics.load = function(t, e) {
+          analytics.load = function (t, e) {
             var n = document.createElement("script");
             n.type = "text/javascript";
             n.async = !0;
@@ -76,13 +76,13 @@
     function chooseSomeRandom(
       sourceArray,
       minNumberElements,
-      maxNumberElements
+      maxNumberElements,
     ) {
       var numberOfElements =
         Math.floor(
           Math.random() *
             (Math.min(sourceArray.length, maxNumberElements) -
-              minNumberElements)
+              minNumberElements),
         ) + minNumberElements;
       var elementIndices = [];
       for (var i = 0; i < numberOfElements; i++) {
@@ -93,7 +93,7 @@
           }
         }
       }
-      return elementIndices.map(function(index) {
+      return elementIndices.map(function (index) {
         return sourceArray[index];
       });
     }
@@ -126,20 +126,20 @@
 
     document
       .getElementById("Produktauswahl")
-      .addEventListener("click", function() {
+      .addEventListener("click", function () {
         analytics.track("Produktauswahl", {
-          productIds: chooseSomeRandom([2, 6, 34, 35, 36, 45, 57], 3, 100)
+          productIds: chooseSomeRandom([2, 6, 34, 35, 36, 45, 57], 3, 100),
         });
       });
-    document.getElementById("Interview").addEventListener("click", function() {
+    document.getElementById("Interview").addEventListener("click", function () {
       analytics.track("Interview", {
         page: chooseSomeRandom([1, 2, 3], 1, 1),
-        formId: getFormId()
+        formId: getFormId(),
       });
     });
     document
       .getElementById("Grobvergleich")
-      .addEventListener("click", function() {
+      .addEventListener("click", function () {
         analytics.track("Grobvergleich", {
           rateIds: chooseSomeRandom(
             [
@@ -150,41 +150,41 @@
               generateUniqueId(8),
               generateUniqueId(8),
               generateUniqueId(8),
-              generateUniqueId(8)
+              generateUniqueId(8),
             ],
             0,
-            100
+            100,
           ),
-          formId: getFormId()
+          formId: getFormId(),
         });
       });
     document
       .getElementById("Detailvergleich")
-      .addEventListener("click", function() {
+      .addEventListener("click", function () {
         analytics.track("Detailvergleich", {
           rateIds: chooseSomeRandom(
             [generateUniqueId(8), generateUniqueId(8), generateUniqueId(8)],
             1,
-            100
+            100,
           ),
-          formId: getFormId()
+          formId: getFormId(),
         });
       });
-    document.getElementById("Antrag").addEventListener("click", function() {
+    document.getElementById("Antrag").addEventListener("click", function () {
       analytics.track("Antrag", {
         rateId: generateUniqueId(8),
         applicationId: generateUniqueId(8),
-        formId: getFormId()
+        formId: getFormId(),
       });
     });
-    document.getElementById("Angebot").addEventListener("click", function() {
+    document.getElementById("Angebot").addEventListener("click", function () {
       analytics.track("Angebot", {
         rateId: generateUniqueId(8),
         applicationId: generateUniqueId(8),
-        formId: getFormId()
+        formId: getFormId(),
       });
     });
-    document.getElementById("setFormId").addEventListener("click", function() {
+    document.getElementById("setFormId").addEventListener("click", function () {
       var formId = generateUniqueId();
       setFormId(formId);
     });
